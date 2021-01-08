@@ -18,7 +18,7 @@ code {
 }
 .main_title{
     position: absolute;
-    right: 40%;
+    right: 43%;
     color: grey;
     margin-top: 1%;
 }
@@ -27,6 +27,16 @@ code {
     right: 30px;
     margin-top: 1%;
 }
+/* HOME CSS */
+.home_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.align_center{
+    text-align: center;
+}
+
 /* PROFILE CSS */
 .profile_div{
     max-width: 30%;

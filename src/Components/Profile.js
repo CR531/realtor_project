@@ -4,14 +4,18 @@ const Profile = ({ profileData }) => {
         <div className="profile_div"><br />
             <h3 className="profile_text_align">Profile</h3>
             {profileData &&
-                <table><tbody>
-                    <tr><td rowSpan="5"><img className="profile_logo" src={profileData.avatarImage} alt="Profile Logo" /></td></tr>
-                    <tr><td className="profile_row">first name</td><td><h6>{profileData.firstName}</h6></td></tr>
-                    <tr><td className="profile_row">last name</td> <td><h6>{profileData.lastName}</h6></td></tr>
-                    <tr><td className="profile_row">phone</td><td><h6>{profileData.phone}</h6></td></tr>
-                    <tr><td className="profile_row">email</td><td><h6>{profileData.email}</h6></td></tr>
-                    <tr><td /><td className="profile_row">bio</td><td><h6>{profileData.bio}</h6></td></tr>
-                </tbody></table>
+                <table>
+                    <tbody>
+                        <tr><td rowSpan="5">
+                            <img className="profile_logo" src={profileData.avatarImage} alt="Profile Logo"></img>
+                        </td></tr>
+                        <tr><td className="profile_row">first name</td><td><h6>{profileData.firstName}</h6></td></tr>
+                        <tr><td className="profile_row">last name</td> <td><h6>{profileData.lastName}</h6></td></tr>
+                        <tr><td className="profile_row">phone</td><td><h6>{profileData.phone}</h6></td></tr>
+                        <tr><td className="profile_row">email</td><td><h6>{profileData.email}</h6></td></tr>
+                        <tr><td /><td className="profile_row">bio</td><td><h6>{profileData.bio}</h6></td></tr>
+                    </tbody>
+                </table>
             }
         </div>
     );
