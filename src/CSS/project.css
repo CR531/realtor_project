@@ -37,6 +37,12 @@ code {
     text-align: center;
 }
 
+/* DETAIL CSS */
+.detail_table{
+  width: 30%;
+  position: absolute;
+  left: 41%;
+}
 /* PROFILE CSS */
 .profile_div{
     max-width: 30%;
@@ -44,7 +50,7 @@ code {
 .profile_text_align{
     text-align:center;
 }
-.profile_row{
+.row_css{
     font-weight: 700;
     width: 20%;
 }

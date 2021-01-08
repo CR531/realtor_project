@@ -1,6 +1,5 @@
 import React from 'react';
 import Detail from "./Detail";
-
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -18,23 +17,21 @@ class Home extends React.Component {
         return date.toISOString();
     }
     render() {
-        const { featureCollectionData } = this.props;
         return (
             <div className="home_div">
                 {this.state.showDetail &&
-                    <Detail details={this.state.selectedRecord} uri="/Detail_Page" />
+                    <Detail featureItem={this.state.featureItem} />
                 }
-                { !this.state.showDetail && featureCollectionData && <div>
-                    <h3>{featureCollectionData.metadata.title}</h3>
-                    <table>
-                        <thead>
-                            <tr className="align_center">
-                                <th><h5>Place</h5></th>
-                                <th><h5>Magitude</h5></th>
-                                <th><h5>Time</h5></th>
-                            </tr>
-                        </thead>
-                        {featureCollectionData.features.map((item, index) => {
+                { !this.state.showDetail && this.props.featureCollectionData && <div>
+                    <h3>{this.props.featureCollectionData.metadata.title}</h3>
+                    <table><thead>
+                        <tr className="align_center">
+                            <th><h5>Place</h5></th>
+                            <th><h5>Magitude</h5></th>
+                            <th><h5>Time</h5></th>
+                        </tr>
+                    </thead>
+                        {this.props.featureCollectionData.features.map((item, index) => {
                             return (
                                 <tbody key={index}>
                                     <tr key={item.properties.id}>
