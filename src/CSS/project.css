@@ -18,7 +18,8 @@ code {
 }
 .main_title{
     position: absolute;
-    right: 43%;
+    right: 40%;
+    color: grey;
     margin-top: 1%;
 }
 .profile_title{
