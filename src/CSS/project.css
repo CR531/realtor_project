@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* MAIN CSS */
+.realtor_logo{
+    width: 30%;
+    height: 30%;
+}
+.main_title{
+    position: absolute;
+    right: 43%;
+    margin-top: 1%;
+}
+.profile_title{
+    position: absolute;
+    right: 30px;
+    margin-top: 1%;
+}
