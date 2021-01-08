@@ -13,8 +13,8 @@ code {
 }
 /* MAIN CSS */
 .realtor_logo{
-    width: 30%;
-    height: 30%;
+    max-width: 30%;
+    max-height: 30%;
 }
 .main_title{
     position: absolute;
@@ -26,4 +26,19 @@ code {
     position: absolute;
     right: 30px;
     margin-top: 1%;
+}
+/* PROFILE CSS */
+.profile_div{
+    max-width: 30%;
+}
+.profile_text_align{
+    text-align:center;
+}
+.profile_row{
+    font-weight: 700;
+    width: 20%;
+}
+.profile_logo{
+    max-width: 65%;
+    max-height: 5%;
 }
