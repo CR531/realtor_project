@@ -1,7 +1,7 @@
 import React from 'react';
 const Detail = ({ featureItem }) => {
     return (
-        <div>
+        <div className="detail_div">
             {featureItem ?
                 <div>
                     <h3 className="align_center">{featureItem.properties.title}</h3>

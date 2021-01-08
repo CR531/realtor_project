@@ -12,43 +12,64 @@ code {
     monospace;
 }
 /* MAIN CSS */
-.realtor_logo{
-    max-width: 30%;
-    max-height: 30%;
+.main_div{
+    background-color: lightgray;
+    margin: 5px 0px;
+    width:100%;
 }
-.main_title{
-    position: absolute;
-    right: 43%;
+.left_sub_div{
+    text-align: left;
+    width: 33.33%;
+    min-height:50px;
+    display: inline-block;
+}
+.center_sub_div{
+    text-align: center;
     color: grey;
-    margin-top: 1%;
+    width: 33.33%;
+    min-height:50px;
+    display: inline-block;
 }
-.profile_title{
-    position: absolute;
-    right: 30px;
-    margin-top: 1%;
+.right_sub_div{
+    text-align: right;
+    width: 33.33%;
+    min-height:50px;
+    display: inline-block;
 }
+.realtor_logo{
+    max-width: 10%;
+    max-height: 10%;
+}
+
 /* HOME CSS */
 .home_div{
     display: flex;
     justify-content: center;
-    margin-top: 1%;
+    margin: 1% 5% 5% 5%;
 }
 .align_center{
     text-align: center;
 }
 
 /* DETAIL CSS */
-.detail_table{
-  width: 30%;
-  position: absolute;
-  left: 41%;
+.detail_div{
+    margin: 0% 5% 5% 5%;
 }
+.detail_table{
+    width: 130%;
+}
+
 /* PROFILE CSS */
 .profile_div{
+    margin-left: auto;
+    margin-right: auto;
     max-width: 30%;
 }
 .profile_text_align{
     text-align:center;
+}
+.profile_table{
+    width: 550px;
 }
 .row_css{
     font-weight: 700;
@@ -58,3 +79,4 @@ code {
     max-width: 65%;
     max-height: 5%;
 }
+

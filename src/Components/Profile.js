@@ -4,7 +4,7 @@ const Profile = ({ profileData }) => {
         <div className="profile_div"><br />
             <h3 className="profile_text_align">Profile</h3>
             {profileData &&
-                <table>
+                <table className="profile_table">
                     <tbody>
                         <tr><td rowSpan="5">
                             <img className="profile_logo" src={profileData.avatarImage} alt="Profile Logo"></img>
