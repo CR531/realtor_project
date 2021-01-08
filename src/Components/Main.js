@@ -7,12 +7,12 @@ import "../CSS/project.css"
 const Main = ({ EarthquakeData }) => {
     return (
         <Router>
-            <div class="main_div">
-                <div class="left_sub_div">
+            <div className="main_div">
+                <div className="left_sub_div">
                     <Link to={'/'} className="nav-link">
                         <img className="realtor_logo" src={EarthquakeData.site.logoImage} alt="Realtor Logo" /></Link></div>
-                <div class="center_sub_div"><h2>Earthquake Zen Garden</h2></div>
-                <div class="right_sub_div"><Link to={'/Profile_Page'}><h6>Welcome {EarthquakeData.profile.firstName}</h6></Link></div>
+                <div className="center_sub_div"><h2>Earthquake Zen Garden</h2></div>
+                <div className="right_sub_div"><Link to={'/Profile_Page'}><h6>Welcome {EarthquakeData.profile.firstName}</h6></Link></div>
             </div>
             <Switch>
                 <Route exact path="/" component={() => (<Redirect to='/Home_Page' />)} />
